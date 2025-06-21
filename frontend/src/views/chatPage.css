@@ -1,0 +1,56 @@
+/* ChatPage.css */
+.chat-container {
+    display: flex;
+    height: 80vh;
+}
+
+.chat-sidebar {
+    width: 30%;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+}
+
+.chat-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.search-button {
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #5e72e4;
+    color: white;
+}
+
+.search-results {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+
+.user-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-item:hover {
+    background-color: #f0f0f0;
+}
+
+.chat-list {
+    list-style-type: none;
+    padding: 0;
+}

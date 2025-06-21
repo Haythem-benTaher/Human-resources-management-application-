@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Style pour le groupe d'input */
+.search-group {
+  max-width: 500px; /* Largeur maximale */
+  margin: 0 auto; /* Centrage horizontal */
+  border-radius: 30px; /* Coins arrondis */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre douce */
+  overflow: hidden; /* Assure que les coins arrondis sont bien appliqués */
+  transition: box-shadow 0.3s ease-in-out; /* Animation douce pour les changements d'ombre */
+  display: flex; /* Flexbox pour aligner les éléments */
+  align-items: center; /* Centre verticalement les éléments */
+  background-color: #fff; /* Fond blanc pour le groupe d'input */
+  padding: 8px; /* Ajoute un peu de padding interne */
+}
+
+/* Style pour l'input */
+.search-input {
+  border: 1px solid #dcdcdc; /* Bordure gris clair */
+  border-radius: 30px; /* Coins arrondis */
+  padding: 12px 20px; /* Espacement interne */
+  font-size: 16px; /* Taille de police */
+  outline: none; /* Supprime le contour par défaut */
+  transition: all 0.3s ease; /* Animation douce pour les changements */
+  flex: 1; /* Occupe l'espace restant */
+  background-color: #fff; /* Fond blanc pour l'input */
+}
+
+/* Style pour l'input au focus */
+.search-input:focus {
+  border: 2px solid #007bff; /* Bordure bleu au focus */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25); /* Ombre légère autour de l'input */
+}
+
+/* Style pour le texte d'entrée */
+.input-group-text {
+  border: none; /* Supprime la bordure */
+  background-color: #f1f1f1; /* Fond gris très clair */
+  color: #333; /* Couleur du texte gris foncé */
+  border-radius: 30px 0 0 30px; /* Coins arrondis à gauche */
+  padding: 12px 15px; /* Espacement interne */
+  font-size: 18px; /* Taille de police pour l'icône */
+  display: flex; /* Flexbox pour centrer l'icône */
+  align-items: center; /* Centre verticalement l'icône */
+  transition: background-color 0.3s ease; /* Animation douce pour la couleur de fond */
+}
+
+/* Style pour le texte d'entrée au survol */
+.input-group-text:hover {
+  background-color: #e1e1e1; /* Couleur de fond plus claire au survol */
+}
+
+/* Style pour le bouton de suppression */
+.search-group .input-group-append .btn {
+  border: none; /* Supprime la bordure */
+  background-color: transparent; /* Fond transparent */
+}
+
+/* Style pour l'icône du bouton de suppression */
+.search-group .input-group-append .btn .ni-fat-remove {
+  font-size: 18px; /* Taille de police pour l'icône */
+  color: #b0b0b0; /* Couleur de l'icône */
+}
+
+/* Style pour le dropdown */
+.dropdown-toggle {
+  border: 1px solid #dcdcdc; /* Bordure gris clair */
+  border-radius: 30px; /* Coins arrondis */
+  background-color: #fff; /* Fond blanc pour le bouton dropdown */
+  padding: 12px 20px; /* Espacement interne */
+  font-size: 16px; /* Taille de police */
+  transition: background-color 0.3s ease; /* Animation douce pour le changement de couleur de fond */
+}
+
+/* Style pour le bouton dropdown au survol */
+.dropdown-toggle:hover {
+  background-color: #f1f1f1; /* Couleur de fond au survol */
+}
+
+/* Style pour le menu dropdown */
+.dropdown-menu {
+  border-radius: 30px; /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  border: 1px solid #dcdcdc; /* Bordure gris clair */
+  padding: 0; /* Enlève les espacements internes pour le menu */
+  background-color: #fff; /* Fond blanc pour le menu dropdown */
+}
+
+/* Style pour les éléments du menu dropdown */
+.dropdown-item {
+  font-size: 16px; /* Taille de police */
+  padding: 12px 20px; /* Espacement interne */
+}
+
+/* Style pour les éléments du menu dropdown au survol */
+.dropdown-item:hover {
+  background-color: #f1f1f1; /* Couleur de fond au survol */
+}
+
+/* Card Styles */
+.card {
+  border: 1px solid #dcdcdc;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card img {
+  border-radius: 50%;
+  border: 4px solid #007bff;
+}
+
+/* Pagination Styles */
+.pagination {
+  justify-content: center;
+}
+
+.pagination .page-item {
+  margin: 0 5px;
+}
+
+.pagination .page-link {
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .search-group {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .search-input {
+    border-radius: 20px; /* Adjust border radius for smaller screens */
+  }
+}
